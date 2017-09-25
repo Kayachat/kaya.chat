@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 
+  <script src="https://cdn.smooch.io/smooch.min.js"></script>
+
+<script>
+    Smooch.init({
+        appToken: 'dv7d5akztnjbex5iyeza4t27v'});
+    Smooch.sendMessage('Try Me');
+
+</script>
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  <meta charset="utf-8">
@@ -49,15 +58,9 @@
   </a>
   <ul class="main-navigation">
     <li><a href="#hero">Home</a></li>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#creativity">Why</a></li>
-    <li><a href="#work">How</a></li>
-    <li><a href="#help">What</a></li>
-    <li><a href="#clients">Get Involved</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#video">Video</a></li>
-    <li><a href="#why-us">Why us?</a></li>
-    <li><a href="#quote">Quote</a></li>
+    <li><a href="#introduction">Why</a></li>
+    <li><a href="#work">What</a></li>
+    <li><a href="#about">Who</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -69,7 +72,7 @@
   <div class="container centered">
     <div class="twelve columns">
       <h1 class="separator">The best  <del>camera</del> teacher <br>
-    is the one you have <del>with you</del> <ins>access to</h1>
+    is the one you have <del>with you</del> <ins><i>access to</i></h1>
       <h3>Brilliance is evenly distributed, we aim to prove it.</h3>
     </div>
   </div>
@@ -82,12 +85,12 @@
     <div class="row">
       <div class="twelve columns">
         <h3 class="separator"> </h3>
-        <h4>AI chat is being rapidly commodified </h4>
+        <h4>AI chat is rapidly becoming commodified </h4>
         <h4>Translation and NLP is better than ever </h4>
-        <h4>Wifi & Data is almost a human right</h4>
+        <h4>Wifi & Data is <i>almost</i> a human right</h4>
 
-        <h4>The last puzzle piece is the "last mile" access. </h4>
-        <h4>A means of access to all these resources that are not exclusionary to those without consistent access to high-end smart devices.</h4>
+        <h4>The final puzzle piece is the "last mile" access. </h4>
+        <h4>A way to access resources that is not exclusionary to those without consistent access to high-end smart devices.</h4><br>
         <h1>We're here to put the pieces together <i class="em em-raised_hands"></i></h1>
       </div>
       <ul>
@@ -220,25 +223,68 @@
   </div>
 </section>
 
-<!-- Help -->
+<!-- Why -->
 
 <section data-sr id="help" class="help u-full-width featured-bg-image">
   <h3 class="centered">
-    Funnelling the advances in technology, accesibility, efficiency and good intentions, <br> <br>into the hands of underserved youth of the world
+    Funnelling advances in technology, accesibility, efficiency and good intentions <p> <i> into the hands of the underserved youth of the world <p><p>
+     <h1> <i class="em em-raising_hand"></i> </i></h1>
   </h3>
-  
+    
 </section>
 
-<section data-sr id="clients" class="clients u-full-width">
-    <div class="container">
-      <div class="row">
-        <h3 class="separator">Not Conviced? </h3>
-      </div>
 
-  
-  <button class="button inverted" onClick="window.open('https://www.messenger.com/t/kayachatbot');"><span class="icon">TRY IT</span></button>
+<!-- Why Chat -->
+
+<section data-sr id="Why Chat" class="why u-full-width">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3 class="separator">Why Chat? Why Education?</h3>
+        <h4></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <ul class="services">
+        <li class="four columns">
+          <div class="service-image">
+            <img src="images/services/iphone5c.png">
+          </div>
+          <h5>Low-Tech</h5>
+          <p>Whatsapp/Wechat are common, even without smartphone access, this accessibility means the path to connection is available, just untapped</p>
+        </li>
+        <li class="four columns">
+          <div class="service-image">
+            <img src="images/services/ipad_air.png">
+          </div>
+          <h5>Low-Data</h5>
+          <p>Issues relating to data, network availability, data are problems that all solutions in this space face, but focusing on lowest cost communications will mean lowest friction to adoption and highest retention.</p>
+        </li>
+        <li class="four columns">
+          <div class="service-image">
+            <img src="images/services/macbook_pro.png">
+          </div>
+          <h5>Future facing</h5>
+          <p>The internet interface of the future is no longer a laptop, we are building towards that future</p>
+        </li>
+      </ul>
     </div>
   </div>
+</section>
+
+
+<!-- Try It -->
+<section data-sr id="help" class="help u-full-width featured-bg-image">
+
+    <div class="container">
+      <div class="row">
+        <h3 class="separator">Not Conviced? <br> </h3>
+  
+
+  <button class="button inverted" onClick="Smooch.open();"><span class="icon"><i>Try it!</i></span></button>
+    </div>
+
 </section>
 
 <!-- Clients -->
@@ -252,44 +298,26 @@
     <div class="row">
       <div class="twelve columns">
         <h3 class="separator">About us</h3>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</h4>
+        <h4>Passionate about Africa, Education, Technology and Efficiency</h4>
       </div>
     </div>
     <div class="row">
       <ul class="people-list">
-        <li class="three columns people-list-item">
-          <img src="images/people_1.jpg">
+        <li class="six columns people-list-item">
+          <img src="images/matt.png">
           <div class="people-hover">
-            <a href="#"><i class="fa fa-external-link"></i></a>
+            <a href="https://www.linkedin.com/in/matthew-arderne/"><i class="fa fa-external-link"></i></a>
             <div class="people-detail">
-              <h3>JOHN</h3>
-              <p>CEO/Founder</p>
+              <h3>Matt</h3>
+              <p>Founder</p>
             </div>
           </div>
-        </li>
-        <li class="three columns people-list-item">
-          <img src="images/people_2.jpg">
-          <div class="people-hover">
-            <a href="#"><i class="fa fa-external-link"></i></a>
-            <div class="people-detail">
-              <h3>Wiliam</h3>
-              <p>CTO/Founder</p>
-            </div>
-          </div>
-        </li>
-        <li class="three columns people-list-item">
-          <img src="images/people_3.jpg">
-          <div class="people-hover">
-            <a href="#"><i class="fa fa-external-link"></i></a>
-            <div class="people-detail">
-              <h3>Clare</h3>
-              <p>Designer</p>
-            </div>
-          </div>
-        </li>
-        <li class="three columns people-list-item blank-feature">
+
+
+        <li class="six columns people-list-item blank-feature">
           <div class="vertical-centered">
             <h3 class="separator">WE ARE HIRING</h3>
+            
             <button class="button">Apply</button>
           </div>
         </li>
@@ -301,13 +329,13 @@
 <!-- Video -->
 
 
-<!-- Why us -->
-
 
 <!-- Quote -->
 
-<section data-sr id="quote" class="quote featured-bg-image u-full-width">
+<section data-sr id="help" class="help u-full-width featured-bg-image">
+  <h1 class="centered">#redistributingopportunity</h1>
 
+  
 </section>
 
 <!-- Contact -->
@@ -325,42 +353,7 @@
 
 <!-- Contact Us -->
 
-<section data-sr class="container contact-us u-full-width u-max-full-width">
-  <div class="row">
-    <div class="four columns contact-us-details">
-      <h3>Our Location</h3>
-      <h5>
-      31 Brickfield St  <br />
-      Woodstock,  <br />
-      Cape Town, 7925 <br />
-      South Africa<br />
-    
-      </h5>
-      <ul class="social-links">
 
-          <a href="https://www.messenger.com/t/kayachatbot" target="_blank">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="eight columns contact-us-form">
-      <form>
-        <div class="row">
-          <div class="six columns">
-            <input class="u-full-width" type="text" placeholder="Name" id="nameInput">
-          </div>
-          <div class="six columns">
-            <input class="u-full-width" type="email" placeholder="Email" id="emailInput">
-          </div>
-        </div>
-        <textarea class="u-full-width" placeholder="Message" id="messageInput"></textarea>
-        <input class="button u-pull-right" type="submit" value="Send">
-      </form>
-
-    </div>
-  </div>
-</section>
 
 <!-- Footer -->
 
@@ -369,6 +362,15 @@
     <div class="row">
       <div class="twelve columns">
         <h5>&copy 2017 Kayachat</h5>
+        <h5>
+      Cape Town,
+      South Africa<br />
+    
+      </h5>
+      <ul class="social-links">
+
+          <a href="https://www.messenger.com/t/kayachatbot" target="_blank">
+            <i class="fa fa-facebook"></i>
       </div>
     </div>
   </div>
@@ -379,8 +381,4 @@
 </body>
 </html>
 
-<script src="https://cdn.smooch.io/smooch.min.js"></script>
 
-<script>
-    Smooch.init({appToken: 'dv7d5akztnjbex5iyeza4t27v'});
-</script>

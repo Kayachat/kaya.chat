@@ -1,2 +1,1 @@
-# kayachat.com
-Kayachat.com Homepage
+<img src="images/iphone.JPG" width="400"  />
