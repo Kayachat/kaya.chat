@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 
+  <script src="https://cdn.smooch.io/smooch.min.js"></script>
+
+<script>
+    Smooch.init({
+        appToken: 'dv7d5akztnjbex5iyeza4t27v'});
+    Smooch.sendMessage('Try Me');
+
+</script>
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  <meta charset="utf-8">
@@ -270,14 +279,12 @@
 
     <div class="container">
       <div class="row">
-        <h3 class="separator">Not Conviced? <br> Try it </h3>
+        <h3 class="separator">Not Conviced? <br> </h3>
   
 
- 
-  <button class="button inverted" onClick="window.open('https://www.messenger.com/t/kayachatbot');"><span class="icon">Facebook Messanger</span></button>
+  <button class="button inverted" onClick="Smooch.open();"><span class="icon">Try it!</span></button>
     </div>
-      <button class="button inverted" onClick="window.open('https://mmbiz.qpic.cn/mmbiz_jpg/EzaBcfoibtmrJPicSxREM04Od0KaRvl48k9B4LZAhsJRhgAv0C3LvTyfMtp5e49ia0MaQ3yk7zAttzUo14R988hNg/0');"><span class="icon">WeChat</span></button>
-  </div>
+
 </section>
 
 <!-- Clients -->
@@ -374,13 +381,4 @@
 </body>
 </html>
 
-<script src="https://cdn.smooch.io/smooch.min.js"></script>
-
-<script>
-    Smooch.init({
-        appToken: 'dv7d5akztnjbex5iyeza4t27v'});
-    Smooch.sendMessage('hello');
-    Smooch.updateUser();
-    Smooch.open();
-</script>
 
