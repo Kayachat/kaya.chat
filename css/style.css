@@ -449,7 +449,7 @@ section {
 .work-items li {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 250px;
 
   /* important because we need to overwrite the default skeleton */
   margin: 0!important;
