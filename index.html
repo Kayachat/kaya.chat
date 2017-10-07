@@ -47,6 +47,7 @@
   <script type="text/javascript" src="js/jquery.fancybox.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <script src="node_modules/chart.js/dist/Chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 
 </head>
@@ -285,47 +286,66 @@
 <section data-sr id="Why Chat" class="why u-full-width">
   <div class="container">
     <div class="row">
-<h5>Chatbot vs Cellphone App - Visual Representation</h5>
- <p>
-    <div class="chartjs-wrapper"><canvas id="chartjs-3" class="chartjs" width="undefined" height="undefined"></canvas>
-        <script>
-            new Chart(document.getElementById("chartjs-3"), {
-                "type": "radar",
-                "options.legend": "Chat vs Apps?",
-                "data": {
-                    "labels": ["Ease of use", "Accessibility", "Speed to deployment", "Market Share", "Native usage"],
-                    "datasets": [{
-                        "label": "Chatbots",
-                        "data": [100, 95, 90, 15, 80],
-                        "fill": true,
-                        "backgroundColor": "rgba(255, 99, 132, 0.2)",
-                        "borderColor": "rgb(255, 99, 132)",
-                        "pointBackgroundColor": "rgb(255, 99, 132)",
-                        "pointBorderColor": "#fff",
-                        "pointHoverBackgroundColor": "#fff",
-                        "pointHoverBorderColor": "rgb(255, 99, 132)"
-                    }, {
-                        "label": "Android/iOS apps",
-                        "data": [70, 48, 40, 70, 80],
-                        "fill": true,
-                        "backgroundColor": "rgba(54, 162, 235, 0.2)",
-                        "borderColor": "rgb(54, 162, 235)",
-                        "pointBackgroundColor": "rgb(54, 162, 235)",
-                        "pointBorderColor": "#fff",
-                        "pointHoverBackgroundColor": "#fff",
-                        "pointHoverBorderColor": "rgb(54, 162, 235)"
-                    }]
-                },
-                "options": {
-                    "elements": {
-                        "line": {
-                            "tension": .3,
-                            "borderWidth": 2.5
+<h5>Chatbot / Cellphone App / Web</h5>
 
-                        }
-                    }
-                 }
-            });
+ <p>
+    
+        <canvas id="radar-chart" width="500" height="300"></canvas>
+        <script>
+          new Chart(document.getElementById("radar-chart"), {
+    type: 'radar',
+    data: {
+      labels: ["Ease of use", "Accessibility", "Speed to deployment", "Market Share", "Native usage"],
+      datasets: [
+        {
+          label: "Chatbots",
+          fill: true,
+            backgroundColor: "rgba(54, 162, 235, 0.2)",
+            borderColor: "rgb(54, 162, 235)",
+            pointBackgroundColor: "rgb(54, 162, 235)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgb(54, 162, 235)",
+
+          data: [100, 95, 90, 15, 80]
+        }, {
+          label: "Android/iOS apps",
+          fill: true,
+            backgroundColor: "rgba(255, 99, 132, 0.2)",
+            borderColor: "rgb(255, 99, 132)",
+            pointBackgroundColor: "rgb(255, 99, 132)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgb(255, 99, 132)",
+
+          data: [70, 48, 40, 70, 80]
+        },
+        {
+          label: "Web",
+          fill: true,
+            backgroundColor: "rgba(55, 99, 132, 0.2)",
+            borderColor: "rgb(55, 99, 132)",
+            pointBackgroundColor: "rgb(55, 99, 132)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgb(55, 99, 132)",
+
+          data: [40, 10, 55, 5, 5]
+        }
+      ]
+    },
+    options: {
+                          elements: {
+                           line: {
+                            tension: .2,
+                            borderWidth: 3
+
+                                   }
+                                }
+      
+    }
+});
+
         </script>
     </div>
 </p>
