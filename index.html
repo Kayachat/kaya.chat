@@ -46,6 +46,8 @@
   <script type="text/javascript" src="js/singlenav.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script src="node_modules/chart.js/dist/Chart.js"></script>
+
 
 </head>
 <body>
@@ -225,14 +227,18 @@
   </div>
 </section>
 
-<!-- Why -->
 
+<!-- Try It -->
 <section data-sr id="help" class="help u-full-width featured-bg-image">
-  <h3 class="centered">
-    Funnelling advances in technology, accesibility, efficiency and good intentions <p> <i> into the hands of the underserved youth of the world </i><p>
-     <i class="em em-raising_hand"></i> </h3>
+
+    <div class="container">
+      <div class="row">
+        <h3 class="separator">Not Conviced? <br> </h3>
   
-    
+
+  <button class="button inverted" onClick="Smooch.open();"><span class="icon"><i>Try it!</i></span></button>
+    </div>
+
 </section>
 
 
@@ -276,19 +282,71 @@
 </section>
 
 
-<!-- Try It -->
-<section data-sr id="help" class="help u-full-width featured-bg-image">
+<section data-sr id="Why Chat" class="why u-full-width">
+  <div class="container">
+    <div class="row">
+<h5>Chatbot vs Cellphone App - Visual Representation</h5>
+ <p>
+    <div class="chartjs-wrapper"><canvas id="chartjs-3" class="chartjs" width="undefined" height="undefined"></canvas>
+        <script>
+            new Chart(document.getElementById("chartjs-3"), {
+                "type": "radar",
+                "options.legend": "Chat vs Apps?",
+                "data": {
+                    "labels": ["Ease of use", "Accessibility", "Speed to deployment", "Market Share", "Native usage"],
+                    "datasets": [{
+                        "label": "Chatbots",
+                        "data": [100, 95, 90, 15, 80],
+                        "fill": true,
+                        "backgroundColor": "rgba(255, 99, 132, 0.2)",
+                        "borderColor": "rgb(255, 99, 132)",
+                        "pointBackgroundColor": "rgb(255, 99, 132)",
+                        "pointBorderColor": "#fff",
+                        "pointHoverBackgroundColor": "#fff",
+                        "pointHoverBorderColor": "rgb(255, 99, 132)"
+                    }, {
+                        "label": "Android/iOS apps",
+                        "data": [70, 48, 40, 70, 80],
+                        "fill": true,
+                        "backgroundColor": "rgba(54, 162, 235, 0.2)",
+                        "borderColor": "rgb(54, 162, 235)",
+                        "pointBackgroundColor": "rgb(54, 162, 235)",
+                        "pointBorderColor": "#fff",
+                        "pointHoverBackgroundColor": "#fff",
+                        "pointHoverBorderColor": "rgb(54, 162, 235)"
+                    }]
+                },
+                "options": {
+                    "elements": {
+                        "line": {
+                            "tension": .3,
+                            "borderWidth": 2.5
 
-    <div class="container">
-      <div class="row">
-        <h3 class="separator">Not Conviced? <br> </h3>
-  
-
-  <button class="button inverted" onClick="Smooch.open();"><span class="icon"><i>Try it!</i></span></button>
+                        }
+                    }
+                 }
+            });
+        </script>
     </div>
-
+</p>
+    </div>
+  </div>
+</section>
+    </div>
+  </div>
 </section>
 
+
+<!-- Why -->
+
+<section data-sr id="help" class="help u-full-width featured-bg-image">
+  <h3 class="centered">
+    Funnelling advances in technology, accesibility, efficiency and good intentions <p> <i> into the hands of the underserved youth of the world </i><p>
+     <i class="em em-raising_hand"></i> </h3>
+  
+    
+
+</section>
 <!-- Clients -->
 
 
@@ -336,9 +394,13 @@
 
 <section data-sr id="help" class="help u-full-width featured-bg-image">
   <h1 class="centered">#redistributingopportunity</h1>
-
-  
-</section>
+  </section>
+<section data-sr id="help" class=contact u-full-width">
+      <script type="text/javascript">
+          window.Maitre = { uuid: "MFb42a4ded8a" };
+      </script>
+      <script data-maitre src="https://maitreapp.co/widget.js" async></script>
+  </section>
 
 <!-- Contact -->
 
